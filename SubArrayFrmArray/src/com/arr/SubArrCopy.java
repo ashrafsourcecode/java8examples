@@ -11,12 +11,11 @@ public class SubArrCopy {
 
 		int begin = 1, end = 4;
 		
-		Integer[] subarray=IntStream.range(begin, end).mapToObj(i-> a[i]).toArray(Integer[]::new);
+		Integer[] subarray=IntStream.range(begin, end).mapToObj(i-> a[i]).limit(2).toArray(Integer[]::new);
 		
 		System.out.println(Arrays.toString(subarray));
 		
 		
-
 	}
 
 }
